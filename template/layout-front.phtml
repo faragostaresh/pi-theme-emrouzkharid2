@@ -103,7 +103,7 @@ $breadcrumbs = $this->breadcrumb(
     <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 </head>
 <body id="pi-<?php echo $module; ?>" class="pi-locale-<?php echo $locale; ?> pi-front">
-<?php if ($module = 'system') { ?>
+<?php if ($module == 'system') { ?>
     <!-- Header: brand, slogan, user bar -->
     <header class="pi-header">
         <div class="pi-header-user">
@@ -172,20 +172,8 @@ $breadcrumbs = $this->breadcrumb(
                             <hr />
                         </div>
                     </div>
-                    <div class="col-md-offset-2 col-md-8">
-                        <form class="form-horizontal">
-                            <div class="form-group">
-                                <label class="col-md-3">آدرس کالای شما</label>
-                                <input type="text" class="form-control col-md-9" placeholder="https://www.digikala.com">
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-3">قیمت کالای شما</label>
-                                <input type="text" class="form-control col-md-9" placeholder="۴۰۰۰۰۰۰ ریال">
-                            </div>
-                            <div class="col-md-offset-3 col-md-9">
-                                <button type="submit" class="btn btn-primary btn-lg">ثبت سفارش</button>
-                            </div>
-                        </form>
+                    <div class="col-md-offset-2 col-md-8 text-left">
+                        <?php echo $this->widget('preorder-form'); ?>
                     </div>
                 </div>
             </div>
@@ -338,6 +326,15 @@ $breadcrumbs = $this->breadcrumb(
     </section>
 <?php } else { ?>
     <header class="pi-header">
+        <div class="pi-header-user">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <?php echo $this->widget('system-user-bar'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="pi-header-body">
             <div class="container">
                 <div class="row">
@@ -357,31 +354,35 @@ $breadcrumbs = $this->breadcrumb(
                         <?php } ?>
                     </div>
                     <div class="col-md-9">
-                        <?php echo $this->widget('system-user-bar'); ?>
+                        <div class="clearfix">
+                            <nav class="navbar navbar-default row">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <i class="fa fa-bars"></i>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav navbar-right pi-navbar-nav'); ?>
+                                </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-default">
+        <div class="pi-header-form">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="navbar-header">
-                            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
-                            <div class="navbar-form navbar-right">
-                                <?php echo $this->widget('search-search'); ?>
-                            </div>
-                        </div>
+                    <div class="col-md-offset-2 col-md-8 text-left">
+                        <?php echo $this->widget('preorder-form', array('order' => 'inline')); ?>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+
+
+
     <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
     <section class="pi-section">
         <div class="container">
