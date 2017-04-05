@@ -473,17 +473,21 @@ form .icon-question-sign {
 
 .pi-footer .pi-footer-social ul li {
     font-size: 20px;
-    background-color: #bdbdbd;
     width: 40px !important;
     height: 40px !important;
     border-radius: 50px;
-    color: #333;
-    padding: 8px 0;
+    color: #fff;
+    padding: 5px 0 8px 0;
     text-align: center;
+    border: 1px solid #fff;
 }
 
 .pi-footer .pi-footer-social ul li a {
-    color: #212121;
+    color: #fff;
+}
+
+.pi-footer .pi-footer-social ul li:hover {
+    border: 1px solid #fec107;
 }
 
 .pi-footer .pi-footer-social ul li a:hover {
