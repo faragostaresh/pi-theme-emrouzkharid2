@@ -2,14 +2,16 @@
 html {
     min-height: 100%;
     position: relative;
+    color: #757575;
 }
 
 a {
-    color: #333;
+    color: #212121;
 }
 
 a:hover {
     text-decoration: none;
+    color: #fec107;
 }
 
 h1 {
@@ -126,7 +128,7 @@ h5, h6 {
     padding: 0 15px;
     cursor: pointer;
     display: block;
-    color: #333;
+    color: #212121;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
 }
@@ -277,7 +279,7 @@ form .icon-question-sign {
 .pi-divider {
     font-family: serif, sans-serif;
     margin: 0 6px;
-    color: #ccc;
+    color: #bdbdbd;
 }
 
 .pi-legend {
@@ -347,7 +349,7 @@ form .icon-question-sign {
 
 /* header */
 #pi-system .pi-header {
-    background: url('../image/header.jpg') rgba(0,0,0, .4) center center no-repeat;
+    background: url('../image/header.jpg') rgba(1, 151, 166, .4) center center no-repeat;
     background-size: cover;
     min-height: 700px;
     position: relative;
@@ -356,7 +358,7 @@ form .icon-question-sign {
 }
 
 .pi-header {
-    background: url('../image/header-page.jpg') rgba(0,0,0, .4) center center no-repeat;
+    background: url('../image/header-page.jpg') rgba(1, 151, 166, .4) center center no-repeat;
     background-size: cover;
     min-height: 180px;
     position: relative;
@@ -365,7 +367,7 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-user {
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(1, 151, 166, 0.8);
     margin-bottom: 15px;
 }
 
@@ -386,7 +388,7 @@ form .icon-question-sign {
 }
 
 #pi-system .pi-header .pi-header-form {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(1, 151, 166, .5);
 }
 
 .pi-header .pi-header-form {
@@ -419,21 +421,21 @@ form .icon-question-sign {
 
 .pi-header .navbar-nav > li > a:hover,
 .pi-header .navbar-nav > li > a:focus {
-    color: #ccc;
+    color: #fec107;
     background-color: transparent;
 }
 
 .pi-header .navbar-nav > .active > a,
 .pi-header .navbar-nav > .active > a:hover,
 .pi-header .navbar-nav > .active > a:focus {
-    color: #fff;
+    color: #fec107;
     background-color: #6481a7;
 }
 
 .pi-header .navbar-nav > .disabled > a,
 .pi-header .navbar-nav > .disabled > a:hover,
 .pi-header .navbar-nav > .disabled > a:focus {
-    color: #ccc;
+    color: #fec107;
     background-color: transparent;
 }
 
@@ -450,9 +452,9 @@ form .icon-question-sign {
 
 /* footer */
 .pi-footer {
-    background-color: #111;
+    background-color: #00bcd5;
     color: #fff;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
     font-size: 12px;
 }
 
@@ -461,7 +463,7 @@ form .icon-question-sign {
 }
 
 .pi-footer a:hover {
-    color: #fff;;
+    color: #fec107;
 }
 
 .pi-footer .pi-footer-social ul {
@@ -471,7 +473,7 @@ form .icon-question-sign {
 
 .pi-footer .pi-footer-social ul li {
     font-size: 20px;
-    background-color: #ccc;
+    background-color: #bdbdbd;
     width: 40px !important;
     height: 40px !important;
     border-radius: 50px;
@@ -481,11 +483,11 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-social ul li a {
-    color: #333;
+    color: #212121;
 }
 
 .pi-footer .pi-footer-social ul li a:hover {
-    color: #EE011A;
+    color: #fec107;
 }
 
 .pi-footer .pi-footer-social .pi-footer-social-text {
@@ -493,10 +495,8 @@ form .icon-question-sign {
     font-size: 20px;
 }
 
-.pi-footer .pi-footer-body .container {
+.pi-footer .pi-footer-body {
     padding: 25px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
 }
 
 .pi-footer .pi-footer-body h3 {
@@ -510,6 +510,7 @@ form .icon-question-sign {
 
 .pi-footer .pi-footer-copyright {
     padding: 25px 0;
+    background: #0197a6;
 }
 
 /* userbar */
@@ -537,7 +538,7 @@ form .icon-question-sign {
 }
 
 .pi-custom-product .thumbnail .caption {
-    background-color: rgba(0,0,0, .1);
+    background-color: rgba(1, 151, 166, .1);
     position: absolute;
     top: 0;
     right: 0;
@@ -548,7 +549,7 @@ form .icon-question-sign {
 }
 
 .pi-custom-product .thumbnail:hover .caption{
-    background-color: rgba(0,0,0, .6);
+    background-color: rgba(1, 151, 166, .6);
 }
 
 
@@ -579,7 +580,7 @@ form .icon-question-sign {
 }
 
 .pi-section-banner-body {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(1, 151, 166, .5);
     padding: 10px;
     text-align: center;
 }
@@ -654,7 +655,7 @@ form .icon-question-sign {
 
 
 .pi-custom-feedback-single {
-    background-color: #ccc;
+    background-color: #bdbdbd;
     padding: 25px;
     text-align: center;
     border-radius: 4px;
