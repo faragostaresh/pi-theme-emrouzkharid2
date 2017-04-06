@@ -109,15 +109,6 @@ $breadcrumbs = $this->breadcrumb(
         <div class="pi-header-user">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <?php echo $this->widget('system-user-bar'); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pi-header-body">
-            <div class="container">
-                <div class="row">
                     <div class="col-md-3">
                         <?php if ($module == 'system') { ?>
                             <h1>
@@ -134,6 +125,15 @@ $breadcrumbs = $this->breadcrumb(
                         <?php } ?>
                     </div>
                     <div class="col-md-9">
+                        <?php echo $this->widget('system-user-bar'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pi-header-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="clearfix">
                             <nav class="navbar navbar-default row">
                                 <div class="navbar-header">
@@ -142,7 +142,7 @@ $breadcrumbs = $this->breadcrumb(
                                     </button>
                                 </div>
                                 <div class="navbar-collapse collapse">
-                                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav navbar-right pi-navbar-nav'); ?>
+                                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
                                 </div>
                             </nav>
                         </div>
@@ -172,7 +172,7 @@ $breadcrumbs = $this->breadcrumb(
                             <hr />
                         </div>
                     </div>
-                    <div class="col-md-offset-2 col-md-8 text-left">
+                    <div class="col-md-offset-2 col-md-8 text-center">
                         <?php echo $this->widget('preorder-form'); ?>
                     </div>
                 </div>
@@ -185,32 +185,32 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="row">
                     <div class="pi-section-icon pi-section-icon-w  clearix">
                         <div class="col-md-3 pi-section-icon-single">
-                            <a href="" title="">
-                                <img alt="" src="<?php echo $this->assetTheme('image/icon-1.png'); ?>">
+                            <a href="https://www.emrouzkharid.com/new/page/purchase-guide" title="راهنمای خرید">
+                                <img alt="راهنمای خرید" src="<?php echo $this->assetTheme('image/icon-1.png'); ?>">
                             </a>
-                            <h3>خرید کنید</h3>
-                            <p>امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید</p>
+                            <h3>راهنمای خرید</h3>
+                            <p>چگونه از خدمات امروز خرید استفاده کنیم ؟</p>
                         </div>
                         <div class="col-md-3 pi-section-icon-single">
-                            <a href="" title="">
-                                <img alt="" src="<?php echo $this->assetTheme('image/icon-2.png'); ?>">
+                            <a href="https://www.emrouzkharid.com/new/page/supplier" title="تأمین کننده ما شوید">
+                                <img alt="تأمین کننده ما شوید" src="<?php echo $this->assetTheme('image/icon-2.png'); ?>">
                             </a>
-                            <h3>تامین کننده شوید</h3>
-                            <p>امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید</p>
+                            <h3>تأمین کننده ما شوید</h3>
+                            <p>در صورتی که فروشنده کالا یا خدمتی هستید و مایلید مشتریان امروز خرید از خدمات شما استفاده کنند، با ما تماس بگیرید</p>
                         </div>
                         <div class="col-md-3 pi-section-icon-single">
-                            <a href="" title="">
-                                <img alt="" src="<?php echo $this->assetTheme('image/icon-3.png'); ?>">
+                            <a href="https://www.emrouzkharid.com/new/page/join-us" title="به ما بپیوندید">
+                                <img alt="به ما بپیوندید" src="<?php echo $this->assetTheme('image/icon-3.png'); ?>">
                             </a>
                             <h3>به ما بپیوندید</h3>
-                            <p>امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید</p>
+                            <p>چنانچه در مجموعه ای مشغول به کار هستید و مایلید همکاران شما از خدمات امروز خرید استفده کنند.</p>
                         </div>
                         <div class="col-md-3 pi-section-icon-single">
-                            <a href="" title="">
-                                <img alt="" src="<?php echo $this->assetTheme('image/icon-4.png'); ?>">
+                            <a href="https://www.emrouzkharid.com/new/page/methods" title="انواع طرح های خرید">
+                                <img alt="انواع طرح های خرید" src="<?php echo $this->assetTheme('image/icon-4.png'); ?>">
                             </a>
-                            <h3>طرح های خرید</h3>
-                            <p>امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید امروز خرید کنید ، فردا پرداخت کنید</p>
+                            <h3>انواع طرح های خرید</h3>
+                            <p>از طری های خرید و روش های پرداخت ما مطلع شوید و با دید باز انتخاب کنید</p>
                         </div>
                     </div>
                 </div>
@@ -329,15 +329,6 @@ $breadcrumbs = $this->breadcrumb(
         <div class="pi-header-user">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <?php echo $this->widget('system-user-bar'); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pi-header-body">
-            <div class="container">
-                <div class="row">
                     <div class="col-md-3">
                         <?php if ($module == 'system') { ?>
                             <h1>
@@ -354,6 +345,15 @@ $breadcrumbs = $this->breadcrumb(
                         <?php } ?>
                     </div>
                     <div class="col-md-9">
+                        <?php echo $this->widget('system-user-bar'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pi-header-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="clearfix">
                             <nav class="navbar navbar-default row">
                                 <div class="navbar-header">
@@ -362,7 +362,7 @@ $breadcrumbs = $this->breadcrumb(
                                     </button>
                                 </div>
                                 <div class="navbar-collapse collapse">
-                                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav navbar-right pi-navbar-nav'); ?>
+                                    <?php echo $navigation->menu()->setUlClass('nav navbar-nav pi-navbar-nav'); ?>
                                 </div>
                             </nav>
                         </div>
@@ -373,16 +373,13 @@ $breadcrumbs = $this->breadcrumb(
         <div class="pi-header-form">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8 text-left">
+                    <div class="col-md-offset-2 col-md-8 text-center">
                         <?php echo $this->widget('preorder-form', array('order' => 'inline')); ?>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
-
-
     <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
     <section class="pi-section">
         <div class="container">
@@ -534,19 +531,18 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="col-md-2">
                     <h3>راهکار ها</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" title="">راهکار شماره یک</a></li>
-                        <li><a href="#" title="">راهکار شماره دو</a></li>
-                        <li><a href="#" title="">راهکار شماره سه</a></li>
-                        <li><a href="#" title="">راهکار شماره چهار</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/terms" title="شرایط و مقررات">شرایط و مقررات</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/about-us" title="درباره ما">درباره ما</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/contact" title="تماس با ما">تماس با ما</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <h3>خدمات</h3>
                     <ul class="list-unstyled">
-                        <li><a href="#" title="">راهکار شماره یک</a></li>
-                        <li><a href="#" title="">راهکار شماره دو</a></li>
-                        <li><a href="#" title="">راهکار شماره سه</a></li>
-                        <li><a href="#" title="">راهکار شماره چهار</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/purchase-guide" title="راهنمای خرید">راهنمای خرید</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/supplier" title="تأمین کننده ما شوید">تأمین کننده ما شوید</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/join-us" title="به ما بپیوندید">به ما بپیوندید</a></li>
+                        <li><a href="https://www.emrouzkharid.com/new/page/methods" title="انواع طرح های خرید">انواع طرح های خرید</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 text-center">
