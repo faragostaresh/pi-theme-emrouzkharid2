@@ -357,6 +357,15 @@ form .icon-question-sign {
     color: #fff;
 }
 
+#pi-portfolio .pi-header {
+    background: url('../image/header-portfolio.jpg') rgba(1, 151, 166, .4) center center no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
 .pi-header {
     background: url('../image/header-page.jpg') rgba(1, 151, 166, .4) center center no-repeat;
     background-size: cover;
@@ -408,6 +417,13 @@ form .icon-question-sign {
     border-radius: 0;
     border: 0;
     background: none;
+}
+
+#pi-portfolio .pi-header .navbar-default {
+    background-color: rgba(1, 151, 166, 0.8);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 1px solid rgba(1, 151, 166, 1);
 }
 
 .pi-header .navbar-nav > li > a {
@@ -653,4 +669,20 @@ form .icon-question-sign {
         color: #757575;
         width: 1100px;
     }
+}
+
+.portfolio-list .page-header {
+    text-align: center;
+}
+
+.portfolio-list .thumbnail  {
+    border-color: #fff;
+}
+
+.portfolio-list .thumbnail .caption {
+    display: none;
+}
+
+.portfolio-single .page-header {
+    text-align: center;
 }
