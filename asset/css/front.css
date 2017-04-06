@@ -686,3 +686,7 @@ form .icon-question-sign {
 .portfolio-single .page-header {
     text-align: center;
 }
+
+.portfolio .thumbnail img {
+    width: 350px !important;
+}
