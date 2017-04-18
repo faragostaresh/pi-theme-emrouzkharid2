@@ -95,6 +95,10 @@ $breadcrumbs = $this->breadcrumb(
         )
     ))
 );
+
+if (Pi::user()->getId() != 1) {
+    header("Location: https://www.emrouzkharid.com/index.html");
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo $locale; ?>">
@@ -131,7 +135,7 @@ $breadcrumbs = $this->breadcrumb(
             </div>
         </div>
         <div class="pi-header-body">
-            <div class="container">
+            <?php /* <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="clearfix">
@@ -148,7 +152,7 @@ $breadcrumbs = $this->breadcrumb(
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */ ?>
         </div>
         <div class="pi-header-text">
             <div class="container">

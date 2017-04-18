@@ -563,7 +563,7 @@ form .icon-question-sign {
     padding-top: 100px;
 }
 
-.pi-custom-product .thumbnail:hover .caption{
+.pi-custom-product .thumbnail:hover .caption {
     background-color: rgba(1, 151, 166, .6);
 }
 
@@ -572,7 +572,7 @@ form .icon-question-sign {
 }
 
 .pi-section-box-1 .pi-section-icon-single img {
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .pi-section-banner {
@@ -675,7 +675,7 @@ form .icon-question-sign {
     text-align: center;
 }
 
-.portfolio-list .thumbnail  {
+.portfolio-list .thumbnail {
     border-color: #fff;
 }
 
