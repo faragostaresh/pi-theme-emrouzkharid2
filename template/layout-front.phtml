@@ -95,10 +95,6 @@ $breadcrumbs = $this->breadcrumb(
         )
     ))
 );
-
-if (Pi::user()->getId() != 1) {
-    header("Location: https://www.emrouzkharid.com/index.html");
-}
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo $locale; ?>">
