@@ -350,29 +350,32 @@ form .icon-question-sign {
 /* header */
 #pi-system .pi-header {
     background: url('../image/header.jpg') rgba(1, 151, 166, .4) center center no-repeat;
-    background-size: cover;
-    min-height: 650px;
+    min-height: 600px;
     position: relative;
     text-align: center;
     color: #fff;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #pi-portfolio .pi-header {
     background: url('../image/header-portfolio.jpg') rgba(1, 151, 166, .4) center center no-repeat;
-    background-size: cover;
     min-height: 400px;
     position: relative;
     text-align: center;
     color: #fff;
+    background-size: cover;
 }
 
 .pi-header {
     background: url('../image/header-page.jpg') rgba(1, 151, 166, .4) center center no-repeat;
-    background-size: cover;
-    min-height: 180px;
+    min-height: 350px;
     position: relative;
     text-align: center;
     color: #fff;
+    background-size: cover;
 }
 
 .pi-header .pi-header-user {

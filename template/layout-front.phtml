@@ -110,10 +110,10 @@ if (Pi::user()->getId() != 1) {
 <?php if ($module == 'system') { ?>
     <!-- Header: brand, slogan, user bar -->
     <header class="pi-header">
-        <div class="pi-header-user">
+        <div class="pi-header-user navbar-fixed-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2 text-left">
                         <?php if ($module == 'system') { ?>
                             <h1>
                                 <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
@@ -128,7 +128,7 @@ if (Pi::user()->getId() != 1) {
                             </h2>
                         <?php } ?>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-10">
                         <?php echo $this->widget('system-user-bar'); ?>
                     </div>
                 </div>
@@ -330,10 +330,10 @@ if (Pi::user()->getId() != 1) {
     </section>
 <?php } else { ?>
     <header class="pi-header">
-        <div class="pi-header-user">
+        <div class="pi-header-user navbar-fixed-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-2 text-left">
                         <?php if ($module == 'system') { ?>
                             <h1>
                                 <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
@@ -348,14 +348,14 @@ if (Pi::user()->getId() != 1) {
                             </h2>
                         <?php } ?>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-10">
                         <?php echo $this->widget('system-user-bar'); ?>
                     </div>
                 </div>
             </div>
         </div>
         <div class="pi-header-body">
-            <div class="container">
+            <?php /* <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="clearfix">
@@ -372,9 +372,9 @@ if (Pi::user()->getId() != 1) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */ ?>
         </div>
-        <?php if ($module != 'portfolio') { ?>
+        <?php /* if ($module != 'portfolio') { ?>
         <div class="pi-header-form">
             <div class="container">
                 <div class="row">
@@ -384,7 +384,7 @@ if (Pi::user()->getId() != 1) {
                 </div>
             </div>
         </div>
-        <?php } ?>
+        <?php } */?>
     </header>
     <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
     <section class="pi-section">
