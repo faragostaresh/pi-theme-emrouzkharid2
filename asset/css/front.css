@@ -351,7 +351,7 @@ form .icon-question-sign {
 #pi-system .pi-header {
     background: url('../image/header.jpg') rgba(1, 151, 166, .4) center center no-repeat;
     background-size: cover;
-    min-height: 700px;
+    min-height: 650px;
     position: relative;
     text-align: center;
     color: #fff;
