@@ -683,7 +683,15 @@ form .icon-question-sign {
 }
 
 .portfolio-list .thumbnail .caption {
-    display: none;
+    background: rgba(1, 151, 166, 1) !important;
+    text-align: center !important;
+    height: 30px !important;
+    margin-top: 0px !important;
+}
+
+.portfolio-list .thumbnail .caption h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .portfolio-single .page-header {
