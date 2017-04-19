@@ -95,6 +95,11 @@ $breadcrumbs = $this->breadcrumb(
         )
     ))
 );
+if (!in_array(Pi::user()->getId(), array(1,7,10))) {
+    if ($module != 'user') {
+        header("Location: https://www.emrouzkharid.com/index.html");
+    }
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="<?php echo $locale; ?>">
@@ -106,7 +111,7 @@ $breadcrumbs = $this->breadcrumb(
 <?php if ($module == 'system') { ?>
     <!-- Header: brand, slogan, user bar -->
     <header class="pi-header">
-        <div class="pi-header-user navbar-fixed-top">
+        <div class="pi-header-user">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 text-left">
@@ -326,7 +331,7 @@ $breadcrumbs = $this->breadcrumb(
     </section>
 <?php } else { ?>
     <header class="pi-header">
-        <div class="pi-header-user navbar-fixed-top">
+        <div class="pi-header-user">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 text-left">
