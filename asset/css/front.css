@@ -701,3 +701,7 @@ form .icon-question-sign {
 .portfolio .thumbnail img {
     width: 350px !important;
 }
+
+.help-title {
+    margin-top: 200px;
+}
