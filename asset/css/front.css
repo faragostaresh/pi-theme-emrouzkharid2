@@ -703,5 +703,9 @@ form .icon-question-sign {
 }
 
 .help-title {
-    margin-top: 200px;
+    margin-top: 175px;
+}
+
+.help-image {
+    margin: 50px;
 }
