@@ -349,7 +349,7 @@ form .icon-question-sign {
 
 /* header */
 #pi-system .pi-header {
-    background: url('../image/header.jpg') rgba(1, 151, 166, .4) center center no-repeat;
+    background: url('../image/header.jpg') rgba(0,0,0, .3) center center no-repeat;
     min-height: 600px;
     position: relative;
     text-align: center;
@@ -361,7 +361,7 @@ form .icon-question-sign {
 }
 
 #pi-portfolio .pi-header {
-    background: url('../image/header-portfolio.jpg') rgba(1, 151, 166, .4) center center no-repeat;
+    background: url('../image/header-portfolio.jpg') rgba(0,0,0, .3) center center no-repeat;
     min-height: 400px;
     position: relative;
     text-align: center;
@@ -370,7 +370,7 @@ form .icon-question-sign {
 }
 
 .pi-header {
-    background: url('../image/header-page.jpg') rgba(1, 151, 166, .4) center center no-repeat;
+    background: url('../image/header-page.jpg') rgba(0,0,0, .3) center center no-repeat;
     min-height: 350px;
     position: relative;
     text-align: center;
@@ -379,7 +379,7 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-user {
-    background-color: rgba(1, 151, 166, 0.8);
+    background-color: rgba(0,0,0, 0.7);
 }
 
 .pi-header .pi-header-user h1,
@@ -395,7 +395,7 @@ form .icon-question-sign {
 }
 
 #pi-system .pi-header .pi-header-form {
-    background-color: rgba(1, 151, 166, .5);
+    background-color: rgba(0,0,0, .4);
 }
 
 .pi-header .pi-header-form {
@@ -423,10 +423,10 @@ form .icon-question-sign {
 }
 
 #pi-portfolio .pi-header .navbar-default {
-    background-color: rgba(1, 151, 166, 0.8);
+    background-color: rgba(0,0,0, .7);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-top: 1px solid rgba(1, 151, 166, 1);
+    border-top: 1px solid rgba(0,0,0, .9);
 }
 
 .pi-header .navbar-nav > li > a {
@@ -556,7 +556,7 @@ form .icon-question-sign {
 }
 
 .pi-custom-product .thumbnail .caption {
-    background-color: rgba(1, 151, 166, .1);
+    background-color: rgba(0,0,0, .1);
     position: absolute;
     top: 0;
     right: 0;
@@ -567,7 +567,7 @@ form .icon-question-sign {
 }
 
 .pi-custom-product .thumbnail:hover .caption {
-    background-color: rgba(1, 151, 166, .6);
+    background-color: rgba(0,0,0, .5);
 }
 
 .pi-section-box {
@@ -589,7 +589,7 @@ form .icon-question-sign {
 }
 
 .pi-section-banner-body {
-    background-color: rgba(1, 151, 166, .5);
+    background-color: rgba(0,0,0, .4);
     padding: 10px;
     text-align: center;
 }
@@ -683,7 +683,7 @@ form .icon-question-sign {
 }
 
 .portfolio-list .thumbnail .caption {
-    background: rgba(1, 151, 166, 1) !important;
+    background: rgba(0,0,0, 1) !important;
     text-align: center !important;
     height: 30px !important;
     margin-top: 0px !important;
