@@ -354,7 +354,7 @@ form .icon-question-sign {
     position: relative;
     text-align: center;
     color: #fff;
-    background-attachment: fixed;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +379,8 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-user {
-    background-color: rgba(0,0,0, 0.7);
+    height: 80px;
+    background-color: rgba(1, 151, 166, 0.6);
 }
 
 .pi-header .pi-header-user h1,
@@ -389,13 +390,22 @@ form .icon-question-sign {
     font-size: 35px;
 }
 
+.pi-userbar {
+    padding-top: 13px;
+}
+
 .pi-header .pi-header-text {
     padding: 80px 0;
     text-shadow: 1px 1px 1px #000;
 }
 
 #pi-system .pi-header .pi-header-form {
-    background-color: rgba(0,0,0, .4);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+25&0+0,0.65+25 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 25%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 25%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
 .pi-header .pi-header-form {
@@ -555,6 +565,11 @@ form .icon-question-sign {
     position: relative;
 }
 
+
+.pi-custom-product .thumbnail img {
+    border-radius: 8px;
+}
+
 .pi-custom-product .thumbnail .caption {
     background-color: rgba(0,0,0, .1);
     position: absolute;
@@ -568,14 +583,56 @@ form .icon-question-sign {
 
 .pi-custom-product .thumbnail:hover .caption {
     background-color: rgba(0,0,0, .5);
+    border-radius: 8px;
+}
+
+.pi-custom-product .thumbnail:hover h3 {
+    display: none;
+}
+
+.pi-custom-product .thumbnail p {
+    display: none;
+}
+
+.pi-custom-product .thumbnail:hover p {
+    display: block;
+}
+
+.pi-custom-product .thumbnail:hover p  {
+    animation: 2s slide-up;
+    margin-top:0%;
+}
+
+@keyframes slide-up {
+    from {
+        margin-top: 50%;
+        height: 100%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 50%;
+    }
 }
 
 .pi-section-box {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 .pi-section-box-1 .pi-section-icon-single img {
     padding-bottom: 20px;
+}
+
+.pi-section-box-1 .pi-section-icon-single {
+    background: #d9d9d9;
+    margin-bottom: 30px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+
 }
 
 .pi-section-banner {
@@ -664,6 +721,9 @@ form .icon-question-sign {
     padding: 25px;
     text-align: center;
     border-radius: 4px;
+    -webkit-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    -moz-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
 }
 
 @media (min-width: 992px) {
@@ -708,4 +768,26 @@ form .icon-question-sign {
 
 .help-image {
     margin: 50px;
+}
+
+
+
+
+/* Float */
+
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+    transform: translateY(-8px);
 }

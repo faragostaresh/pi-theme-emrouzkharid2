@@ -25,7 +25,10 @@ $this->bootstrap(array(
 ));
 
 // Load front.css
-$this->css($this->assetTheme('css/front.css'));
+$this->css(array(
+    $this->assetTheme('css/front.css'),
+    //$this->assetTheme('css/animate.css'),
+));
 
 // Load localization css
 $this->css($this->assetLocale('locale.css'));
@@ -191,33 +194,41 @@ __('Toman');
             <div class="container">
                 <div class="row">
                     <div class="pi-section-icon pi-section-icon-w  clearix">
-                        <div class="col-md-3 pi-section-icon-single">
-                            <a href="https://www.emrouzkharid.com/page/purchase-guide" title="راهنمای خرید">
-                                <img alt="راهنمای خرید" src="<?php echo $this->assetTheme('image/icon-1.png'); ?>">
-                            </a>
-                            <h3>راهنمای خرید</h3>
-                            <p>چگونه از خدمات امروز خرید استفاده کنیم ؟</p>
+                        <div class="col-md-3 ">
+                            <div class="pi-section-icon-single">
+                                <a href="https://www.emrouzkharid.com/page/purchase-guide" title="راهنمای خرید">
+                                    <img class="hvr-float" alt="راهنمای خرید" src="<?php echo $this->assetTheme('image/icon-1.png'); ?>">
+                                </a>
+                                <h3>راهنمای خرید</h3>
+                                <p>چگونه از خدمات امروز خرید استفاده کنیم ؟</p>
+                            </div>
                         </div>
-                        <div class="col-md-3 pi-section-icon-single">
-                            <a href="https://www.emrouzkharid.com/page/supplier" title="تأمین کننده ما شوید">
-                                <img alt="تأمین کننده ما شوید" src="<?php echo $this->assetTheme('image/icon-2.png'); ?>">
-                            </a>
-                            <h3>تأمین کننده ما شوید</h3>
-                            <p>در صورتی که فروشنده کالا یا خدمتی هستید و مایلید مشتریان امروز خرید از خدمات شما استفاده کنند، با ما تماس بگیرید</p>
+                        <div class="col-md-3 ">
+                            <div class="pi-section-icon-single">
+                                <a href="https://www.emrouzkharid.com/page/supplier" title="تأمین کننده ما شوید">
+                                    <img class="hvr-float" alt="تأمین کننده ما شوید" src="<?php echo $this->assetTheme('image/icon-2.png'); ?>">
+                                </a>
+                                <h3>تأمین کننده ما شوید</h3>
+                                <p>در صورتی که فروشنده کالا یا خدمتی هستید و مایلید مشتریان امروز خرید از خدمات شما استفاده کنند، با ما تماس بگیرید</p>
+                            </div>
                         </div>
-                        <div class="col-md-3 pi-section-icon-single">
-                            <a href="https://www.emrouzkharid.com/page/join-us" title="به ما بپیوندید">
-                                <img alt="به ما بپیوندید" src="<?php echo $this->assetTheme('image/icon-3.png'); ?>">
-                            </a>
-                            <h3>به ما بپیوندید</h3>
-                            <p>چنانچه در مجموعه ای مشغول به کار هستید و مایلید همکاران شما از خدمات امروز خرید استفده کنند.</p>
+                        <div class="col-md-3 ">
+                            <div class="pi-section-icon-single">
+                                <a href="https://www.emrouzkharid.com/page/join-us" title="به ما بپیوندید">
+                                    <img class="hvr-float" alt="به ما بپیوندید" src="<?php echo $this->assetTheme('image/icon-3.png'); ?>">
+                                </a>
+                                <h3>به ما بپیوندید</h3>
+                                <p>چنانچه در مجموعه ای مشغول به کار هستید و مایلید همکاران شما از خدمات امروز خرید استفده کنند.</p>
+                            </div>
                         </div>
-                        <div class="col-md-3 pi-section-icon-single">
-                            <a href="https://www.emrouzkharid.com/preorder/checkout" title="انواع طرح های خرید">
-                                <img alt="انواع طرح های خرید" src="<?php echo $this->assetTheme('image/icon-4.png'); ?>">
-                            </a>
-                            <h3>انواع طرح های خرید</h3>
-                            <p>از طری های خرید و روش های پرداخت ما مطلع شوید و با دید باز انتخاب کنید</p>
+                        <div class="col-md-3 ">
+                            <div class="pi-section-icon-single">
+                                <a href="https://www.emrouzkharid.com/preorder/checkout" title="انواع طرح های خرید">
+                                    <img class="hvr-float" alt="انواع طرح های خرید" src="<?php echo $this->assetTheme('image/icon-4.png'); ?>">
+                                </a>
+                                <h3>انواع طرح های خرید</h3>
+                                <p>از طری های خرید و روش های پرداخت ما مطلع شوید و با دید باز انتخاب کنید</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,6 +256,7 @@ __('Toman');
                                             <img class="img-responsive" alt="" src="<?php echo $this->assetTheme('image/product-1.jpg'); ?>">
                                             <div class="caption">
                                                 <h3>محصول فروخته شده</h3>
+                                                <p>تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست </p>
                                             </div>
                                         </div>
                                     </div>
@@ -253,6 +265,7 @@ __('Toman');
                                             <img class="img-responsive" alt="" src="<?php echo $this->assetTheme('image/product-2.jpg'); ?>">
                                             <div class="caption">
                                                 <h3>محصول فروخته شده</h3>
+                                                <p>تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست </p>
                                             </div>
                                         </div>
                                     </div>
@@ -261,6 +274,7 @@ __('Toman');
                                             <img class="img-responsive" alt="" src="<?php echo $this->assetTheme('image/product-3.jpg'); ?>">
                                             <div class="caption">
                                                 <h3>محصول فروخته شده</h3>
+                                                <p>تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست </p>
                                             </div>
                                         </div>
                                     </div>
