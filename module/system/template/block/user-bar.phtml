@@ -30,15 +30,15 @@ $modalEnabled = Pi::user()->config('enable_modal');
                 <li class="pi-userbar-avatar">
                     <a href="<?php echo $block['user']['dashboard']; ?>">
                         <?php echo $block['user']['avatar']; ?>
-                        <?php echo _escape((isset($block['user']['first_name']) && $block['user']['first_name']) ? $block['user']['first_name'] : $block['user']['name']); ?>
+                        <?php echo $block['user']['name']; ?>
                     </a>
                 </li>
-                <li><a href="https://www.emrouzkharid.com/portfolio" title="فرپشگاه ها"><i class="fa fa-truck"></i> فروشگاه ها</a></li>
+                <li><a href="https://www.emrouzkharid.com/portfolio" title="فرپشگاه‌ها"><i class="fa fa-truck"></i> فروشگاه‌ها</a></li>
                 <?php if (isset($block['user']['message'])) { ?>
                     <li>
                         <a href="<?php echo $block['user']['message']; ?>" title="<?php echo $block['user']['count']; ?> <?php echo _b('message(s)'); ?>">
                             <i class="fa fa-envelope-o"></i>
-                            <?php echo $block['show_title'] ? _b('Message') : ''; ?>
+                            <?php echo $block['show_title'] ? _b('پیام‌ها') : ''; ?>
                             <?php if($block['user']['count']) { ?>
                                 <span class="badge"><?php echo $block['user']['count']; ?></span>
                             <?php } ?>
@@ -49,7 +49,7 @@ $modalEnabled = Pi::user()->config('enable_modal');
                         <li>
                             <a href="<?php echo $block['user']['message_url']; ?>" title="<?php echo $block['user']['message_count']; ?> <?php echo _b('message(s)'); ?>">
                                 <i class="fa fa-envelope-o"></i>
-                                <?php echo $block['show_title'] ? _b('Message') : ''; ?>
+                                <?php echo $block['show_title'] ? _b('پیام‌ها') : ''; ?>
                                 <?php if($block['user']['message_count']) { ?>
                                     <span class="badge"><?php echo $block['user']['message_count']; ?></span>
                                 <?php } ?>

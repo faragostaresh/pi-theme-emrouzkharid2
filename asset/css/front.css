@@ -354,7 +354,6 @@ form .icon-question-sign {
     position: relative;
     text-align: center;
     color: #fff;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,7 +361,7 @@ form .icon-question-sign {
 
 #pi-portfolio .pi-header {
     background: url('../image/header-portfolio.jpg') rgba(0,0,0, .3) center center no-repeat;
-    min-height: 400px;
+    min-height: 500px;
     position: relative;
     text-align: center;
     color: #fff;
@@ -467,6 +466,11 @@ form .icon-question-sign {
 .pi-section {
     padding: 15px 0;
     background-color: #fff;
+}
+
+#pi-system .pi-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .pi-section .pi-module-content {
@@ -743,15 +747,19 @@ form .icon-question-sign {
 }
 
 .portfolio-list .thumbnail .caption {
-    background: rgba(0,0,0, 1) !important;
+    background: rgba(1, 151, 166, 1) !important;
     text-align: center !important;
     height: 30px !important;
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 
 .portfolio-list .thumbnail .caption h2 {
     padding: 0;
     margin: 0;
+}
+
+.portfolio-list h1 {
+    display: none;
 }
 
 .portfolio-single .page-header {
