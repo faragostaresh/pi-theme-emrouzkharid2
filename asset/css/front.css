@@ -394,8 +394,17 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-text {
-    padding: 80px 0;
+    padding: 50px 0;
     text-shadow: 1px 1px 1px #000;
+}
+
+.pi-header .pi-header-text .col-md-10 {
+    background: rgba(0,0,0, .4);
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0,0,0, .4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px rgba(0,0,0, .4);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px rgba(0,0,0, .4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding: 30px;
 }
 
 #pi-system .pi-header .pi-header-form {
@@ -409,7 +418,10 @@ form .icon-question-sign {
 
 .pi-header .pi-header-form {
     bottom: 0;
-    padding: 25px 0;
+}
+
+.pi-header .pi-header-form .pre-order-form-inline form {
+    opacity: .6;
 }
 
 .pi-header .pi-header-text h2 {
@@ -798,4 +810,24 @@ form .icon-question-sign {
 .hvr-float:focus,
 .hvr-float:active {
     transform: translateY(-8px);
+}
+
+
+
+.pre-order-form-inline input[type="url"] {
+    /* width: 400px; */
+}
+
+
+
+.pi-header-title .pi-header-title-1 {
+    font-size: .6em;
+}
+
+.pi-header-title .pi-header-title-2 {
+    font-size: 1.5em;
+}
+
+.pi-header-title .pi-header-title-3 {
+    font-size: .6em;
 }
