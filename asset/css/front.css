@@ -831,3 +831,7 @@ form .icon-question-sign {
 .pi-header-title .pi-header-title-3 {
     font-size: .6em;
 }
+
+.modal-content {
+    color: #000 !important;
+}
