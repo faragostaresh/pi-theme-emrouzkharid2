@@ -6,7 +6,7 @@ html {
 }
 
 a {
-    color: #212121;
+    color: #0197A6;
 }
 
 a:hover {
@@ -349,18 +349,19 @@ form .icon-question-sign {
 
 /* header */
 #pi-system .pi-header {
-    background: url('../image/header.jpg') rgba(0,0,0, .3) center center no-repeat;
+    background: url('../image/header.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 600px;
     position: relative;
     text-align: center;
     color: #fff;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #pi-portfolio .pi-header {
-    background: url('../image/header-portfolio.jpg') rgba(0,0,0, .3) center center no-repeat;
+    background: url('../image/header-portfolio.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 500px;
     position: relative;
     text-align: center;
@@ -369,7 +370,7 @@ form .icon-question-sign {
 }
 
 .pi-header {
-    background: url('../image/header-page.jpg') rgba(0,0,0, .3) center center no-repeat;
+    background: url('../image/header-page.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 350px;
     position: relative;
     text-align: center;
@@ -389,7 +390,7 @@ form .icon-question-sign {
     font-size: 35px;
 }
 
-.pi-userbar {
+.pi-header .pi-userbar {
     padding-top: 13px;
 }
 
@@ -399,21 +400,21 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-text .col-md-10 {
-    background: rgba(0,0,0, .4);
+    background: rgba(0, 0, 0, .4);
     border-radius: 50%;
-    -webkit-box-shadow: 3px 3px 5px 6px rgba(0,0,0, .4);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    3px 3px 5px 6px rgba(0,0,0, .4);  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 5px 6px rgba(0,0,0, .4);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Firefox 3.5 - 3.6 */
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     padding: 30px;
 }
 
 #pi-system .pi-header .pi-header-form {
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+25&0+0,0.65+25 */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 25%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 25%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); /* IE6-9 */
 }
 
 .pi-header .pi-header-form {
@@ -421,7 +422,14 @@ form .icon-question-sign {
 }
 
 .pi-header .pi-header-form .pre-order-form-inline form {
-    opacity: .6;
+    opacity: .8;
+}
+
+.pi-header .pi-header-form .list-inline {
+    background: rgba(0, 0, 0, .4);
+    margin-top: 0;
+    padding: 15px;
+    border-radius: 4px;
 }
 
 .pi-header .pi-header-text h2 {
@@ -444,10 +452,10 @@ form .icon-question-sign {
 }
 
 #pi-portfolio .pi-header .navbar-default {
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(0, 0, 0, .7);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    border-top: 1px solid rgba(0,0,0, .9);
+    border-top: 1px solid rgba(0, 0, 0, .9);
 }
 
 .pi-header .navbar-nav > li > a {
@@ -472,6 +480,30 @@ form .icon-question-sign {
 .pi-header .navbar-nav > .disabled > a:focus {
     color: #fec107;
     background-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .pi-header .sticky {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        border-top: 0;
+        height: 45px;
+    }
+
+    .modal-backdrop {
+        z-index: -1;
+    }
+
+    .pi-header .sticky .pi-header-logo img {
+        height: 40px;
+    }
+
+    .pi-header .sticky .pi-userbar {
+        padding-top: 0 !important;
+    }
 }
 
 /* section */
@@ -581,13 +613,12 @@ form .icon-question-sign {
     position: relative;
 }
 
-
 .pi-custom-product .thumbnail img {
     border-radius: 8px;
 }
 
 .pi-custom-product .thumbnail .caption {
-    background-color: rgba(0,0,0, .1);
+    background-color: rgba(0, 0, 0, .1);
     position: absolute;
     top: 0;
     right: 0;
@@ -598,7 +629,7 @@ form .icon-question-sign {
 }
 
 .pi-custom-product .thumbnail:hover .caption {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(0, 0, 0, .5);
     border-radius: 8px;
 }
 
@@ -614,9 +645,9 @@ form .icon-question-sign {
     display: block;
 }
 
-.pi-custom-product .thumbnail:hover p  {
+.pi-custom-product .thumbnail:hover p {
     animation: 2s slide-up;
-    margin-top:0%;
+    margin-top: 0%;
 }
 
 @keyframes slide-up {
@@ -645,9 +676,9 @@ form .icon-question-sign {
     height: 300px;
     border-radius: 8px;
     padding: 10px;
-    -webkit-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
-    -moz-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
-    box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    -webkit-box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
+    box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
 
 }
 
@@ -662,7 +693,7 @@ form .icon-question-sign {
 }
 
 .pi-section-banner-body {
-    background-color: rgba(0,0,0, .4);
+    background-color: rgba(0, 0, 0, .4);
     padding: 10px;
     text-align: center;
 }
@@ -737,9 +768,9 @@ form .icon-question-sign {
     padding: 25px;
     text-align: center;
     border-radius: 4px;
-    -webkit-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
-    -moz-box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
-    box-shadow: 0px 1px 20px 4px rgba(217,217,217,1);
+    -webkit-box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
+    -moz-box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
+    box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
 }
 
 @media (min-width: 992px) {
@@ -790,9 +821,6 @@ form .icon-question-sign {
     margin: 50px;
 }
 
-
-
-
 /* Float */
 
 .hvr-float {
@@ -806,19 +834,16 @@ form .icon-question-sign {
     transition-property: transform;
     transition-timing-function: ease-out;
 }
+
 .hvr-float:hover,
 .hvr-float:focus,
 .hvr-float:active {
     transform: translateY(-8px);
 }
 
-
-
 .pre-order-form-inline input[type="url"] {
     /* width: 400px; */
 }
-
-
 
 .pi-header-title .pi-header-title-1 {
     font-size: .6em;

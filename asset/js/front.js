@@ -16,3 +16,19 @@
         navbar.css('marginLeft', '-15px');
     }
 })(jQuery)
+
+$(document).ready(function() {
+    var stickyNavTop = $('.pi-header-user').offset().top;
+    var stickyNav = function(){
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > stickyNavTop) {
+            $('.pi-header-user').addClass('sticky');
+        } else {
+            $('.pi-header-user').removeClass('sticky');
+        }
+    };
+    stickyNav();
+    $(window).scroll(function() {
+        stickyNav();
+    });
+});
