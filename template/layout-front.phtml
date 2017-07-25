@@ -98,11 +98,25 @@ $breadcrumbs = $this->breadcrumb(
         )
     ))
 );
-/* if (!in_array(Pi::user()->getId(), array(1,7,10))) {
-    if ($module != 'user') {
-        header("Location: https://www.emrouzkharid.com/index.html");
+
+
+
+
+
+// Set image
+$headerImageClass = '';
+if ($module == 'portfolio') {
+    $d = (array)Pi::service('url')->getRouteMatch();
+    foreach ($d as $value) {
+        $a[] = $value;
     }
-} */
+    if ($a[1]['slug'] == 'hacoupian') {
+        $headerImageClass = 'pi-portfolio-hacoupian';
+    }
+    if ($a[1]['slug'] == 'nilper') {
+        $headerImageClass = 'pi-portfolio-nilper';
+    }
+}
 
 __('Toman');
 ?>
@@ -346,33 +360,34 @@ __('Toman');
             </div> */ ?>
     </section>
 <?php } else { ?>
-    <header class="pi-header">
-        <div class="pi-header-user">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 text-left pi-header-logo">
-                        <?php if ($module == 'system') { ?>
-                            <h1>
-                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                </a>
-                            </h1>
-                        <?php } else { ?>
-                            <h2>
-                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                </a>
-                            </h2>
-                        <?php } ?>
-                    </div>
-                    <div class="col-md-10">
-                        <?php echo $this->widget('system-user-bar'); ?>
+    <header class="pi-header-main <?php echo $headerImageClass; ?>">
+        <div class="pi-header">
+            <div class="pi-header-user">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 text-left pi-header-logo">
+                            <?php if ($module == 'system') { ?>
+                                <h1>
+                                    <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                        <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                    </a>
+                                </h1>
+                            <?php } else { ?>
+                                <h2>
+                                    <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                        <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                    </a>
+                                </h2>
+                            <?php } ?>
+                        </div>
+                        <div class="col-md-10">
+                            <?php echo $this->widget('system-user-bar'); ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="pi-header-body">
-            <?php /* <div class="container">
+            <div class="pi-header-body">
+                <?php /* <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="clearfix">
@@ -390,20 +405,20 @@ __('Toman');
                     </div>
                 </div>
             </div> */ ?>
-        </div>
-        <div class="pi-header-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <ul class="list-inline">
-                            <li>آدرس صفحه محصول مورد نظر را در باکس رو به رو درج نمایید</li>
-                            <li><?php echo $this->widget('preorder-form', array('order' => 'inline')); ?></li>
-                        </ul>
+            </div>
+            <div class="pi-header-form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="list-inline">
+                                <li>آدرس صفحه محصول مورد نظر را در باکس رو به رو درج نمایید</li>
+                                <li><?php echo $this->widget('preorder-form', array('order' => 'inline')); ?></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <?php /* if ($module != 'portfolio') { ?>
+            <?php /* if ($module != 'portfolio') { ?>
         <div class="pi-header-form">
             <div class="container">
                 <div class="row">
@@ -414,6 +429,7 @@ __('Toman');
             </div>
         </div>
         <?php } */?>
+        </div>
     </header>
     <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
     <section class="pi-section">

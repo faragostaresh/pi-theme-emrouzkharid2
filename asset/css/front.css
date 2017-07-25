@@ -369,6 +369,33 @@ form .icon-question-sign {
     background-size: cover;
 }
 
+#pi-portfolio .pi-header {
+    background: url('../image/header-portfolio.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 500px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-nilper .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-nilper.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-hacoupian .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-hacoupian.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
 .pi-header {
     background: url('../image/header-page.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 350px;
