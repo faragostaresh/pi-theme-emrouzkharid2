@@ -396,6 +396,51 @@ form .icon-question-sign {
     background-size: cover;
 }
 
+#pi-portfolio .pi-portfolio-safand .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-safand.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-digikala .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-digikala.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-digikala .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-digikala.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-eligasht .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-eligasht.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+#pi-portfolio .pi-portfolio-osport .pi-header {
+    background: url('https://www.emrouzkharid.com/upload/images/header-osport.jpg') rgba(0, 0, 0, .3) center center no-repeat;
+    min-height: 450px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
 .pi-header {
     background: url('../image/header-page.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 350px;

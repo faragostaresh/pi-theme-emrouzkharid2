@@ -116,6 +116,18 @@ if ($module == 'portfolio') {
     if ($a[1]['slug'] == 'nilper') {
         $headerImageClass = 'pi-portfolio-nilper';
     }
+    if ($a[1]['slug'] == 'eligasht') {
+        $headerImageClass = 'pi-portfolio-eligasht';
+    }
+    if ($a[1]['slug'] == 'digikala') {
+        $headerImageClass = 'pi-portfolio-digikala';
+    }
+    if ($a[1]['slug'] == 'osport') {
+        $headerImageClass = 'pi-portfolio-osport';
+    }
+    if ($a[1]['slug'] == 'safand') {
+        $headerImageClass = 'pi-portfolio-safand';
+    }
 }
 
 __('Toman');
@@ -189,14 +201,7 @@ __('Toman');
         <div class="pi-header-form">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
-                        <div class="text-center">
-                            <h2>ثبت سفارش کالا</h2>
-                            <p>به منظور ثبت سفارش کالا ، لطفا لینک کالا را در فرم زیر وارد نمایید</p>
-                            <hr />
-                        </div>
-                    </div>
-                    <div class="col-md-offset-2 col-md-8 text-center">
+                    <div class="col-md-offset-1 col-md-10 text-center">
                         <?php echo $this->widget('preorder-form'); ?>
                     </div>
                 </div>
@@ -411,7 +416,6 @@ __('Toman');
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-inline">
-                                <li>آدرس صفحه محصول مورد نظر را در باکس رو به رو درج نمایید</li>
                                 <li><?php echo $this->widget('preorder-form', array('order' => 'inline')); ?></li>
                             </ul>
                         </div>
