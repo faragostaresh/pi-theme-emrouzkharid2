@@ -143,28 +143,37 @@ __('Toman');
     <!-- Header: brand, slogan, user bar -->
     <header class="pi-header">
         <div class="pi-header-user">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 text-left pi-header-logo">
-                        <?php if ($module == 'system') { ?>
-                            <h1>
-                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                </a>
-                            </h1>
-                        <?php } else { ?>
-                            <h2>
-                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                </a>
-                            </h2>
-                        <?php } ?>
-                    </div>
-                    <div class="col-md-10">
-                        <?php echo $this->widget('system-user-bar'); ?>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div class="navbar-brand pi-header-logo">
+                                    <?php if ($module == 'system') { ?>
+                                        <h1>
+                                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                                <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                            </a>
+                                        </h1>
+                                    <?php } else { ?>
+                                        <h2>
+                                            <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                                <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                            </a>
+                                        </h2>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <?php echo $this->widget('system-user-bar'); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
         <div class="pi-header-body">
             <?php /* <div class="container">
@@ -307,7 +316,7 @@ __('Toman');
                 </div>
             </div>
         </div>
-        <div class="pi-section-banner pi-section-banner-2 pi-section-icon">
+        <div class="pi-section-banner pi-section-banner-2 pi-section-icon hidden-xs">
             <div class="pi-section-banner-body">
                 <div class="container">
                     <div class="row">
@@ -368,28 +377,39 @@ __('Toman');
     <header class="pi-header-main <?php echo $headerImageClass; ?>">
         <div class="pi-header">
             <div class="pi-header-user">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 text-left pi-header-logo">
-                            <?php if ($module == 'system') { ?>
-                                <h1>
-                                    <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                        <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                    </a>
-                                </h1>
-                            <?php } else { ?>
-                                <h2>
-                                    <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
-                                        <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
-                                    </a>
-                                </h2>
-                            <?php } ?>
-                        </div>
-                        <div class="col-md-10">
-                            <?php echo $this->widget('system-user-bar'); ?>
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="navbar-header">
+                                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <i class="fa fa-bars"></i>
+                                    </button>
+                                    <div class="navbar-brand pi-header-logo">
+                                        <?php if ($module == 'system') { ?>
+                                            <h1>
+                                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                                </a>
+                                            </h1>
+                                        <?php } else { ?>
+                                            <h2>
+                                                <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>">
+                                                    <img src="<?php echo $this->assetTheme('image/logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
+                                                </a>
+                                            </h2>
+                                        <?php } ?>
+                                    </div>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <?php echo $this->widget('system-user-bar'); ?>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="pi-header-body">
                 <?php /* <div class="container">

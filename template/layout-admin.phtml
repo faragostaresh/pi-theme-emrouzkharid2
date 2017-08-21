@@ -82,6 +82,12 @@ $module = Pi::service('module')->current();
                         <?php _e('Front'); ?>
                     </a>
                 </li>
+                <li>
+                    <a href="<?php echo Pi::url('www'); ?>" title="<?php echo _escape($sitename); ?>" target="_blank">
+                        <span>پیش سفارش جدید</span>
+                        <span class="badge"><?php echo Pi::api('order', 'preorder')->getNewOrderCount(); ?></span>
+                    </a>
+                </li>
             </ul>
             <?php echo $this->widget('system-user-bar', array(
                 'type'            => 'flat',
@@ -96,14 +102,6 @@ $module = Pi::service('module')->current();
                     'section'     => Pi::engine()->application()->getSection(),
                 ),
             )); ?>
-            <ul class="nav navbar-nav navbar-right navbar-go-front">
-                <li>
-                    <a href="<?php echo Pi::url('www'); ?>" title="<?php echo _escape($sitename); ?>" target="_blank">
-                        <span>پیش سفارش جدید</span>
-                        <span class="badge"><?php echo Pi::api('order', 'preorder')->getNewOrderCount(); ?></span>
-                    </a>
-                </li>
-            </ul>
         </nav>
     </div>
 </header>

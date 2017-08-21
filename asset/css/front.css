@@ -464,6 +464,7 @@ form .icon-question-sign {
 
 .pi-header .pi-userbar {
     padding-top: 13px;
+    z-index: 1000 !important;
 }
 
 .pi-header .pi-header-text {
@@ -481,7 +482,9 @@ form .icon-question-sign {
 }
 
 #pi-system .pi-header .pi-header-form {
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+25&0+0,0.65+25 */
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* Chrome10-25,Safari5.1-6 */
@@ -491,6 +494,7 @@ form .icon-question-sign {
 
 .pi-header .pi-header-form {
     bottom: 0;
+    z-index: 10 !important;
 }
 
 .pi-header .pi-header-form .pre-order-form-inline form {
@@ -521,7 +525,9 @@ form .icon-question-sign {
     border-radius: 0;
     border: 0;
     background: none;
+    z-index: 10000 !important;
 }
+
 
 #pi-portfolio .pi-header .navbar-default {
     background-color: rgba(0, 0, 0, .7);
@@ -552,6 +558,31 @@ form .icon-question-sign {
 .pi-header .navbar-nav > .disabled > a:focus {
     color: #fec107;
     background-color: transparent;
+}
+
+.pi-header .navbar-brand {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: rgba(1, 151, 166, 0.9);
+    }
+
+    .navbar-right {
+        float: right !important;
+        text-align: right !important;
+        right: 0 !important;
+        left: auto !important;
+    }
+
+    .navbar-right li {
+        float: right !important;
+        text-align: right !important;
+        right: 0 !important;
+        left: auto !important;
+        width: 100% !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -927,6 +958,10 @@ form .icon-question-sign {
 
 .pi-header-title .pi-header-title-3 {
     font-size: .6em;
+}
+
+.modal {
+    z-index: 12000 !important;
 }
 
 .modal-content {

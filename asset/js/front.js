@@ -15,9 +15,7 @@
     if (!hasBrand) {
         navbar.css('marginLeft', '-15px');
     }
-})(jQuery)
 
-$(document).ready(function() {
     var stickyNavTop = $('.pi-header-user').offset().top;
     var stickyNav = function(){
         var scrollTop = $(window).scrollTop();
@@ -31,4 +29,4 @@ $(document).ready(function() {
     $(window).scroll(function() {
         stickyNav();
     });
-});
+})(jQuery)
