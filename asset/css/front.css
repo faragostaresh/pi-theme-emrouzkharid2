@@ -596,10 +596,6 @@ form .icon-question-sign {
         height: 45px;
     }
 
-    .modal-backdrop {
-        z-index: -1;
-    }
-
     .pi-header .sticky .pi-header-logo img {
         height: 40px;
     }
@@ -876,13 +872,7 @@ form .icon-question-sign {
     box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
 }
 
-@media (min-width: 992px) {
-    .modal-lg {
-        text-align: right;
-        color: #757575;
-        width: 1100px;
-    }
-}
+
 
 .portfolio-list .page-header {
     text-align: center;
@@ -925,7 +915,6 @@ form .icon-question-sign {
 }
 
 /* Float */
-
 .hvr-float {
     display: inline-block;
     vertical-align: middle;
@@ -960,10 +949,25 @@ form .icon-question-sign {
     font-size: .6em;
 }
 
+/* modal */
 .modal {
     z-index: 12000 !important;
 }
 
 .modal-content {
     color: #000 !important;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        text-align: right;
+        color: #757575;
+        width: 1100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-backdrop {
+        z-index: -1;
+    }
 }

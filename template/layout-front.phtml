@@ -638,5 +638,24 @@ __('Toman');
         </div>
     </div>
 </footer>
+<?php if (Pi::user()->getId() > 0) { ?>
+    <!-- Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="orderModalLabel">آخرین وضعیت مانده اقساط</h4>
+                </div>
+                <div class="modal-body">
+                    <?php echo $this->widget('order-installment'); ?>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php } ?>
 </body>
 </html>
