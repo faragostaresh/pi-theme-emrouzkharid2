@@ -350,7 +350,7 @@ form .icon-question-sign {
 /* header */
 #pi-system .pi-header {
     background: url('../image/header.jpg') rgba(0, 0, 0, .3) center center no-repeat;
-    min-height: 600px;
+    min-height: 700px;
     position: relative;
     text-align: center;
     color: #fff;
@@ -450,6 +450,10 @@ form .icon-question-sign {
     background-size: cover;
 }
 
+.pi-header .pi-header-logo img {
+    margin-right: 25px;
+}
+
 .pi-header .pi-header-user {
     height: 80px;
     background-color: rgba(1, 151, 166, 0.6);
@@ -472,24 +476,34 @@ form .icon-question-sign {
     text-shadow: 1px 1px 1px #000;
 }
 
-.pi-header .pi-header-text .col-md-10 {
+.pi-header .pi-header-text .col-md-8 {
     background: rgba(0, 0, 0, .4);
     border-radius: 50%;
-    -webkit-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Firefox 3.5 - 3.6 */
-    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, .4); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    padding: 30px;
+    -webkit-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.57);
+    box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.57);
+    padding: 15px 20px;
 }
 
 #pi-system .pi-header .pi-header-form {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+25&0+0,0.65+25 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); /* IE6-9 */
+    /* background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 25%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); */
+}
+
+.pre-order-form-full input[type="url"] {
+    width: 700px;
+    height: 30px;
+}
+
+.pi-header .pi-header-form .btn-default {
+    background: #ccc;
+    height: 30px;
 }
 
 .pi-header .pi-header-form {
@@ -594,14 +608,20 @@ form .icon-question-sign {
         z-index: 100;
         border-top: 0;
         height: 45px;
+        -webkit-transition-duration: 1s; /* Safari */
+        transition-duration: 1s;
     }
 
     .pi-header .sticky .pi-header-logo img {
         height: 40px;
+        -webkit-transition-duration: 1s;
+        transition-duration: 1s;
     }
 
     .pi-header .sticky .pi-userbar {
         padding-top: 0 !important;
+        -webkit-transition-duration: 1s; /* Safari */
+        transition-duration: 1s;
     }
 }
 
@@ -773,6 +793,7 @@ form .icon-question-sign {
     background: #d9d9d9;
     margin-bottom: 30px;
     height: 300px;
+    max-width: 280px;
     border-radius: 8px;
     padding: 10px;
     -webkit-box-shadow: 0px 1px 20px 4px rgba(217, 217, 217, 1);
@@ -939,6 +960,8 @@ form .icon-question-sign {
 
 .pi-header-title .pi-header-title-1 {
     font-size: .6em;
+    margin-bottom: 15px;
+    padding-left: 250px;
 }
 
 .pi-header-title .pi-header-title-2 {
@@ -947,6 +970,8 @@ form .icon-question-sign {
 
 .pi-header-title .pi-header-title-3 {
     font-size: .6em;
+    margin-top: 15px;
+    padding-right: 250px;
 }
 
 /* modal */

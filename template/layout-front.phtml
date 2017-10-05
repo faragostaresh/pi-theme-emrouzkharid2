@@ -144,7 +144,7 @@ __('Toman');
     <header class="pi-header">
         <div class="pi-header-user">
             <nav class="navbar navbar-default">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="navbar-header">
@@ -176,7 +176,7 @@ __('Toman');
             </nav>
         </div>
         <div class="pi-header-body">
-            <?php /* <div class="container">
+            <?php /* <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="clearfix">
@@ -196,19 +196,22 @@ __('Toman');
             </div> */ ?>
         </div>
         <div class="pi-header-text">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-offset-1 col-md-10">
+                    <div class="col-md-offset-2 col-md-8">
                         <div class="text-center pi-header-title">
-                            <h2><span class="pi-header-title-1">همین</span> <span class="pi-header-title-2">امروز خرید</span> <span class="pi-header-title-3">کنید</span></h2>
-                            <p>با استفاده از سامانه امروز خرید، به راحتی میتوانید خرید مورد نیاز خود را به صورت اعتباری امروز انجام داده <br>و وجه آن را به مرور پرداخت نمایید</p>
+                            <h2>
+                                <div class="pi-header-title-1">همین</div>
+                                <div class="pi-header-title-2">امروز خرید</div>
+                                <div class="pi-header-title-3">کنید</div>
+                            </h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="pi-header-form">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-offset-1 col-md-10 text-center">
                         <?php echo $this->widget('preorder-form'); ?>
@@ -219,7 +222,7 @@ __('Toman');
     </header>
     <section class="pi-section">
         <div class="pi-section-box pi-section-box-1">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="pi-section-icon pi-section-icon-w  clearix">
                         <div class="col-md-3 ">
@@ -267,12 +270,12 @@ __('Toman');
                 <h2>فروشگاهایی که می توانید از آنها خرید کنید</h2>
                 <p>فهرست فروشگاهایی که میتوانید کالا یا خدمات مورد نیاز خود را مستقیما از سایت مربوطه انتخاب و درخواست خرید آن را برای ما ارسال نمایید</p>
                 <p>
-                    <a class="btn btn-primary btn-lg" href="https://www.emrouzkharid.com/portfolio">فهرست تمام فروشگاه ها</a>
+                    <a class="btn btn-primary btn-lg" href="https://www.emrouzkharid.com/portfolio">فهرست فروشگاه ها</a>
                 </p>
             </div>
         </div>
         <div class="pi-section-box pi-section-box-2">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2>آخرین کالاهای تحویل شده</h2>
@@ -318,7 +321,7 @@ __('Toman');
         </div>
         <div class="pi-section-banner pi-section-banner-2 pi-section-icon hidden-xs">
             <div class="pi-section-banner-body">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4 pi-section-icon-single">
                             <img alt="" src="<?php echo $this->assetTheme('image/icon5.png'); ?>">
@@ -337,7 +340,7 @@ __('Toman');
             </div>
         </div>
         <?php /* <div class="pi-section-box pi-section-box-3">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="pi-custom-feedback">
@@ -378,7 +381,7 @@ __('Toman');
         <div class="pi-header">
             <div class="pi-header-user">
                 <nav class="navbar navbar-default">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
 
@@ -432,11 +435,11 @@ __('Toman');
             </div> */ ?>
             </div>
             <div class="pi-header-form">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="list-inline">
-                                <li><?php echo $this->widget('preorder-form', array('order' => 'inline')); ?></li>
+                                <li><?php echo $this->widget('preorder-form'); ?></li>
                             </ul>
                         </div>
                     </div>
@@ -444,7 +447,7 @@ __('Toman');
             </div>
             <?php /* if ($module != 'portfolio') { ?>
         <div class="pi-header-form">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 text-center">
                         <?php echo $this->widget('preorder-form', array('order' => 'inline')); ?>
@@ -457,7 +460,7 @@ __('Toman');
     </header>
     <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
     <section class="pi-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="pi-main-container">
                 <?php if ($breadcrumbs) { echo $breadcrumbs; } ?>
                 <!-- Flash messenger -->
@@ -582,7 +585,7 @@ __('Toman');
 <?php } ?>
 <footer class="pi-footer">
     <div class="pi-footer-social">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 pi-footer-social-text">امروز خرید، ارائه دهنده راهکار های سریع خرید کالا</div>
                 <div class="col-md-6 text-right">
@@ -597,7 +600,7 @@ __('Toman');
         </div>
     </div>
     <div class="pi-footer-body">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5">
                     <p>این فروشگاه کار خود را در سال 1394 آغاز نموده است. با توجه به رشد اقبال عمومی نسبت به خریدهای اینترنتی، فروشگاه امروز خرید محصولات خود را با تمرکز بر کالاهای دیجیتال و لوازم خانگی سبک، به صورت اینترنتی عرضه می‌کند.</p>
@@ -630,7 +633,7 @@ __('Toman');
         </div>
     </div>
     <div class="pi-footer-copyright">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6" data-rel="license">تمام حقوق مطالب برای وب سایت <a title="<?php echo _escape($sitename); ?>" href="<?php echo Pi::url($this->url('home')); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
                 <div class="col-md-6 text-right" data-rel="license"> طراحی و توسعه <a title="فراگسترش" href="http://www.faragostaresh.com" target="_blank">فراگسترش</a></div>
