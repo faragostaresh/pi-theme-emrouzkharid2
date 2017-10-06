@@ -369,15 +369,6 @@ form .icon-question-sign {
     background-size: cover;
 }
 
-#pi-portfolio .pi-header {
-    background: url('../image/header-portfolio.jpg') rgba(0, 0, 0, .3) center center no-repeat;
-    min-height: 500px;
-    position: relative;
-    text-align: center;
-    color: #fff;
-    background-size: cover;
-}
-
 #pi-portfolio .pi-portfolio-nilper .pi-header {
     background: url('https://www.emrouzkharid.com/upload/images/header-nilper.jpg') rgba(0, 0, 0, .3) center center no-repeat;
     min-height: 450px;
@@ -496,9 +487,11 @@ form .icon-question-sign {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0); */
 }
 
-.pre-order-form-full input[type="url"] {
-    width: 700px;
-    height: 30px;
+@media (min-width: 768px) {
+    .pre-order-form-full input[type="url"] {
+        width: 700px;
+        height: 30px;
+    }
 }
 
 .pi-header .pi-header-form .btn-default {
@@ -543,12 +536,12 @@ form .icon-question-sign {
 }
 
 
-#pi-portfolio .pi-header .navbar-default {
+/* #pi-portfolio .pi-header .navbar-default {
     background-color: rgba(0, 0, 0, .7);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-top: 1px solid rgba(0, 0, 0, .9);
-}
+} */
 
 .pi-header .navbar-nav > li > a {
     color: #fff;
