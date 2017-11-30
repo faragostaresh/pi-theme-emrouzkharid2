@@ -638,7 +638,7 @@ form .icon-question-sign {
 .pi-footer {
     background-color: #00bcd5;
     color: #fff;
-    padding: 25px 0 0 0;
+    padding: 0;
     font-size: 12px;
 }
 
@@ -699,6 +699,16 @@ form .icon-question-sign {
 .pi-footer .pi-footer-copyright {
     padding: 25px 0;
     background: #0197a6;
+}
+
+.pi-footer .pi-footer-app {
+    padding: 10px 0;
+    background: #08A4A6;
+}
+
+.pi-footer .pi-footer-app p {
+    padding-top: 15px;
+    font-size: 14px;
 }
 
 /* userbar */

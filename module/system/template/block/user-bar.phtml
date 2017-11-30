@@ -18,6 +18,16 @@ if ($modalEnabled && !$block['user']['uid']) {
     $footScript = $this->plugin('footScript');
     $footScript->addHtml($modalContent);
 }
+
+// Check company panel access
+$companyPanel = false;
+if ($block['user']['uid']) {
+    $roles = Pi::service('user')->getRole($block['user']['uid'], 'front');
+    if (in_array('panel', $roles)) {
+        $companyPanel = true;
+    }
+}
+
 ?>
 <ul class="pi-userbar nav navbar-nav pi-navbar-nav<?php echo $floatClass; ?>">
     <?php if (!$block['user']['uid']) { ?>
@@ -111,6 +121,13 @@ if ($modalEnabled && !$block['user']['uid']) {
                 <a title="<?php echo _b('Favourite'); ?>" href="<?php echo $block['user']['favourite_url']; ?>">
                     <i class="fa fa-star"></i>
                     <?php echo $block['show_title'] ? _b('Favourite') : ''; ?>
+                </a>
+            </li>
+        <?php } ?>
+        <?php if ($companyPanel) { ?>
+            <li class="item-company">
+                <a title="پنل مدیریت" href="<?php echo Pi::url('preorder/panel/'); ?>">
+                    <i class="fa fa-users"></i> پنل مدیریت
                 </a>
             </li>
         <?php } ?>
