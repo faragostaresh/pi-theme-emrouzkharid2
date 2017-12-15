@@ -28,6 +28,14 @@ if ($block['user']['uid']) {
     }
 }
 
+// score
+if ($block['user']['uid']) {
+    $score = Pi::api('invoice', 'order')->getInvoiceScore($block['user']['uid']);
+}
+
+__('Positive score');
+__('Negative score');
+__('Normal score');
 ?>
 <ul class="pi-userbar nav navbar-nav pi-navbar-nav<?php echo $floatClass; ?>">
     <?php if (!$block['user']['uid']) { ?>
@@ -124,7 +132,14 @@ if ($block['user']['uid']) {
                 </a>
             </li>
         <?php } ?>
-        <?php if ($companyPanel) { ?>
+        <?php if (isset($block['user']['credit'])) { ?>
+            <li class="item-score">
+                <a title="امتیاز" href="#">
+                    <i class="fa fa-star"></i> <?php echo sprintf('امتیاز %s %s', $score['type_view'], $score['amount_view']); ?>
+                </a>
+            </li>
+        <?php } ?>
+        <?php if ($companyPanel && isset($block['user']['credit'])) { ?>
             <li class="item-company">
                 <a title="پنل مدیریت" href="<?php echo Pi::url('preorder/panel/'); ?>">
                     <i class="fa fa-users"></i> پنل مدیریت
@@ -138,4 +153,4 @@ if ($block['user']['uid']) {
             </a>
         </li>
     <?php } ?>
-<ul>
+    <ul>
