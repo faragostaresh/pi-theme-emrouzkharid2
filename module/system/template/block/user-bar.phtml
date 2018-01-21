@@ -141,8 +141,14 @@ __('Normal score');
         <?php } ?>
         <?php if ($companyPanel && isset($block['user']['credit'])) { ?>
             <li class="item-company">
-                <a title="پنل مدیریت" href="<?php echo Pi::url('preorder/panel/'); ?>">
+                <a title="پنل مدیریت" href="<?php echo Pi::url('analytic'); ?>">
                     <i class="fa fa-users"></i> پنل مدیریت
+                </a>
+            </li>
+        <?php } elseif ($companyPanel && isset($block['user']['credit'])) { ?>
+            <li class="item-company">
+                <a title="آمار و اطلاعات" href="<?php echo Pi::url('analytic/index/user'); ?>">
+                    <i class="fa fa-line-chart"></i>آمار و اطلاعات
                 </a>
             </li>
         <?php } ?>
